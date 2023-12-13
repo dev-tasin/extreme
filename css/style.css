@@ -1,0 +1,549 @@
+/* ============ Common Code Start Here ============= */
+:root{
+    --primary: #FF9600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+body p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.common_btn{
+    background: var(--primary);
+    color: #fff;
+    border-radius: 4px;
+    width: 200px;
+    height: 60px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    transition: all linear 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.common_btn:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.sub_heading{
+    font-family: 'Yellowtail', cursive;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.heading{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    position: relative;
+}
+.heading:after{
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+}
+/* ============ Common Code End Here ============= */
+
+
+/* ============ Navbar Code Start Here ============= */
+#navbar{
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.nav_wrap{
+    display: flex;
+    align-items: center;
+}
+.nav_logo{
+    width: 20%;
+}
+.nav_menu{
+    width: 60%;
+}
+.nav_menu>ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+.nav_menu>ul li a{
+    color: #FFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    transition: all linear 0.5s;
+}
+.nav_menu>ul li a:hover{
+    color: var(--primary);
+}
+.nav_menu ul li a i{
+    width: 12px;
+    height: 7.75px;
+    font-size: 15px;
+    margin-left: 6px;
+}
+.nav_menu ul li{
+    position: relative;
+}
+.nav_menu ul li ul li a{
+    color: white;
+    margin-bottom: 10px;
+    transition: all linear 0.5s;
+}
+.nav_menu ul li ul li a:hover{
+    color: var(--primary);
+}
+.dropdown{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    opacity: 0;
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    transition: all linear 0.5s;
+    background: #0000007d;
+}
+.nav_menu ul li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+.nav_btn{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+}
+/* ============ Navbar Code End Here ============= */
+
+/* ============ Banner Code Start Here ============= */
+#banner{
+    background: url( ../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 290px 0 156px 0;
+    position: relative;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-content h1{
+    color: #FFF;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 819px;
+    margin: 0 auto;
+}
+.banner_btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+.banner_btn a{
+    margin-left: 20px;
+}
+.banner_shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.banner_shape img{
+    width: 100%;
+    display: block;
+}
+/* ============ Banner Code End Here ============= */ 
+
+/* ============ JoinUs Code Start Here ============= */
+#joinus{
+    padding-top: 70px;
+}
+.joinus_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.joinus_content{
+    width: 600px;
+}
+.joinus_img{
+    width: 650px;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.joinus_img_item{
+    width: 300px;
+    overflow: hidden;
+    height: 620px;
+}
+.joinus_img_item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.joinus_img_item:last-child{
+    height: 520px;
+}
+.joinus_content .sub_heading{
+    color: #14B9F1;
+    padding-top: 30px;
+} 
+.joinus_content .heading{
+    margin-top: 5px;
+}
+.joinus_content .heading::after{
+    background: #A0A0A0;
+}
+.joinus_content .join_pera{
+    color: #222;
+    padding: 62px 0 43px 0;
+}
+.join_peralist{
+    display: flex;
+    align-items: center;
+    padding-bottom: 37px;
+}
+.join_icon{
+    width: 30px;
+    height: 30px;
+    background: #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 23px;
+}
+/* ============ JoinUs Code End Here ============= */
+
+/* ============ Countdown Code Start Here ============= */
+#countdown{
+    padding: 80px 0 200px 0;
+}
+.countdown_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.count_item{
+    width: 312px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    /* opacity: 0.8; */
+    background: #FFF4E5;
+    text-align: center;
+}
+.count_item:nth-child(2){
+    background:#E7FDE9;
+}
+.count_item:nth-child(3){
+    background: #F2F2FD;
+}
+.count_item:last-child{
+    background: #FDF1F5;
+}
+.count_item h2{
+    color: #222;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 40px;
+}
+/* ============ Countdown Code End Here ============= */
+
+/* ============ Extreme Code Start Here ============= */
+#extreme{
+    background: #0C3543;
+    padding: 102px 0;
+    position: relative;
+}
+.extreme_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.extreme_top_left{
+    width: 394px;
+}
+.extreme_top_left .sub_heading{
+    color: var(--primary);
+}
+.extreme_top_left .heading{
+    color: #fff;
+}
+.extreme_top_left .heading::after{
+    background: #fff;
+}
+.extreme_top_right{
+    width: 754px;
+}
+.extreme_top_right p{
+    width: 638px;
+    color: #FFF;
+}
+
+.extreme_item{
+    padding: 90px 0 83px 0;
+}
+.extreme_wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 24px;
+}
+.extreme_box_item{
+    width: 424px;
+    height: 510px;
+    border-radius: 10px 10px 0 0;
+}
+.extreme_box_img{
+    width: 424px;
+    height: 365px;
+    overflow: hidden;
+}
+.extreme_box_img img{
+    object-fit: cover;
+}
+.extreme_box_text{
+    width: 424px;
+    height: 145px;
+    background: #0F4152;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+.extreme_box_text h5{
+    color: #FFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 27px 0 24px 0;
+}
+.extreme_box_text p{
+    color: #fff;
+}
+
+.extreme_bottom{
+    position: relative;
+}
+.extreme_bottom h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Arizonia', cursive;
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.extreme_shape_one{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.extreme_shape_one img{
+    width: 100%;
+    display: block;
+}
+.extreme_shape_two {
+    position: absolute;
+    bottom: 147px;
+    left: -260px;
+    width: 1840px;
+}
+.extreme_shape_two img{
+    width: 100%;
+    display: block;
+}
+/* ============ Extreme Code End Here ============= */
+
+
+/* ============ Sports Code Start Here ============= */
+#sports{
+    background: #FF9600;
+    padding: 110px 0 15px 0;
+}
+.sports_top{
+    text-align: center;
+}
+.sports_text h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 26px 0 46px 0;
+}
+.sports_text h5{
+    color: #FFF;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+.sports_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 20px;
+    column-gap: 10px;
+}
+.sports_btn a{
+    background: transparent;
+    border: 1px solid #fff;
+}
+.sports_btn i{
+    padding-right: 10px;
+}
+.sports_btn a:hover{
+    background: #0C3543;
+    color: #FFF;
+    border: none;
+}
+.sports_btn .common_btn:first-child{
+    height: 65px;
+    width: 200px;
+}
+.sports_btn .common_btn:last-child{
+    width: 245px;
+    height: 65px;
+}
+
+.sports_menu_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sports_menu{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url( ../images/sports_one.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 424px;
+    height: 470px;
+    border-radius: 10px; 
+}
+.sports_menu:nth-child(2){
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url( ../images/sports_two.png);;
+}
+.sports_menu:nth-child(3){
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url( ../images/sports_three.png);;
+}
+.sports_menu_text{
+    padding: 234px 20px 27px 65px;
+    position: relative;
+}
+.sports_menu_text h4{
+    color: #FFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.sports_menu_text h6{
+    color: #FFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 19px 0 69px 0;
+}
+.sports_menu_text h6::after{
+    content: '';
+    position: absolute;
+    top: 389px;
+    left: 65px;
+    width: 265px;
+    height: 1px;
+    background: #717171;
+}
+.sports_menu_text p{
+    color: #A0A0A0;
+}
+.sports_picon{
+    display: flex;
+    align-items: center;
+}
+.sports_icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 15px;
+}
+.sports_icon i{
+    width: 15px;
+    height: 15px;
+    color: #000;
+}
+
+/* ============ Sports Code End Here ============= */
+
+
+
+
+
+
+
+
+/* ============ Common Code Start Here ============= */
+/* ============ Common Code End Here ============= */
+
+/* ============ Common Code Start Here ============= */
+/* ============ Common Code End Here ============= */
+
+/* ============ Common Code Start Here ============= */
+/* ============ Common Code End Here ============= */
